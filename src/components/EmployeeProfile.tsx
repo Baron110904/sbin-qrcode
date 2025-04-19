@@ -2,14 +2,40 @@
 import { Mail, Phone, UserRound } from "lucide-react";
 import Logo from "./Logo";
 
-const EmployeeProfile = () => {
-  const employee = {
+// Base de données temporaire des employés
+const employeesDatabase = {
+  "jean": {
     name: "Jean Dupont",
     position: "Ingénieur Solutions",
     department: "Direction Technique", 
     email: "jean.dupont@entreprise.com",
     phone: "+33 1 23 45 67 89"
-  };
+  },
+  "marie": {
+    name: "Marie Laurent",
+    position: "Directrice Marketing",
+    department: "Direction Marketing", 
+    email: "marie.laurent@entreprise.com",
+    phone: "+33 1 98 76 54 32"
+  },
+  "default": {
+    name: "Jean Dupont",
+    position: "Ingénieur Solutions",
+    department: "Direction Technique", 
+    email: "jean.dupont@entreprise.com",
+    phone: "+33 1 23 45 67 89"
+  }
+};
+
+type EmployeeProfileProps = {
+  employeeId?: string;
+};
+
+const EmployeeProfile = ({ employeeId }: EmployeeProfileProps) => {
+  // Sélectionne l'employé en fonction de l'ID passé en paramètre ou utilise l'employé par défaut
+  const employee = employeeId && employeesDatabase[employeeId] ? 
+    employeesDatabase[employeeId] : 
+    employeesDatabase["default"];
 
   return (
     <div className="max-w-2xl mx-auto p-6 space-y-8">
@@ -46,4 +72,3 @@ const EmployeeProfile = () => {
 };
 
 export default EmployeeProfile;
-

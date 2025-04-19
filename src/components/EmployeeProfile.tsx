@@ -4,26 +4,26 @@ import Logo from "./Logo";
 
 // Base de données temporaire des employés
 const employeesDatabase = {
-  "jean": {
-    name: "Jean Dupont",
-    position: "Ingénieur Solutions",
-    department: "Direction Technique", 
-    email: "jean.dupont@entreprise.com",
-    phone: "+33 1 23 45 67 89"
+  "LANSE": {
+    name: "Hermann LANSE",
+    position: "Directeur de la Transformation, du Digital, des Médias & de la RSE",
+    department: "DTD", 
+    email: "hlanse@celtiis.bj",
+    phone: "+229 01 40 10 01 60"
   },
-  "marie": {
-    name: "Marie Laurent",
-    position: "Directrice Marketing",
-    department: "Direction Marketing", 
-    email: "marie.laurent@entreprise.com",
-    phone: "+33 1 98 76 54 32"
+  "LOKOSSOU": {
+    name: "Allegra LOKOSSOU",
+    position: "Responsable Communication institutionnelle & Relations Publiques",
+    department: "DTD", 
+    email: "allegra.lokossou@celtiis.bj",
+    phone: "+229 01 48 71 47 25"
   },
   "default": {
-    name: "Jean Dupont",
-    position: "Ingénieur Solutions",
-    department: "Direction Technique", 
-    email: "jean.dupont@entreprise.com",
-    phone: "+33 1 23 45 67 89"
+    name: "Hermann LANSE",
+    position: "Directeur de la Transformation, du Digital, des Médias & de la RSE",
+    department: "DTD", 
+    email: "hlanse@celtiis.bj",
+    phone: "+229 01 40 10 01 60"
   }
 };
 

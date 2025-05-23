@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 const WaaPage = () => {
   return (
-    <div className="min-h-screen w-full flex flex-col bg-[#7B466A] text-white p-6 space-y-6">
+    <div className="min-h-screen w-full flex flex-col text-white p-6 space-y-6" style={{ background: 'linear-gradient(to bottom, #7B466A, #5a2f51)' }}>
       
       {/* Section 1: Logo + Texte en haut */}
       <div className="flex justify-between items-center h-[20%]">

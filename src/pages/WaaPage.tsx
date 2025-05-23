@@ -18,7 +18,7 @@ const WaaPage = () => {
 
         {/* Texte principal */}
         <div className="my-8 md:my-10">
-          <h1 className="text-3xl md:text-4xl font-normal tracking-normal leading-normal">
+          <h1 className="text-xl md:text-4xl font-normal tracking-normal leading-snug text-black drop-shadow-md">
             Télécharge waa, puis connecte-toi à la mini-app e-commerce et passe ta commande en quelques clics chez Royal Panini's.
           </h1>
         </div>
@@ -50,20 +50,11 @@ const WaaPage = () => {
       </div>
 
       {/* Partie droite - Image du téléphone */}
-      <div className="hidden md:flex w-1/2 bg-gradient-to-br from-[#7E0B48] to-[#5D3C64] relative overflow-hidden items-center justify-center">
+      <div className="min-h-screen w-full bg-white md:bg-white bg-cover bg-center bg-no-repeat flex flex-col md:flex-row" style={{ backgroundImage: "url('https://i.postimg.cc/Bv6RxH3X/Chat-GPT-Image-May-23-2025-01-51-53-AM.png')" }}>
         <img 
           src="https://i.postimg.cc/Bv6RxH3X/Chat-GPT-Image-May-23-2025-01-51-53-AM.png" 
           alt="iPhone avec applications" 
           className="w-full h-full object-cover"
-        />
-      </div>
-
-      {/* Version mobile de l'image de téléphone */}
-      <div className="md:hidden w-full bg-gradient-to-br from-[#7B466A] to-[#5D3C64] h-64 flex items-center justify-center mt-6">
-        <img 
-          src="https://i.postimg.cc/Bv6RxH3X/Chat-GPT-Image-May-23-2025-01-51-53-AM.png" 
-          alt="iPhone avec applications" 
-          className="object-contain h-full"
         />
       </div>
     </div>

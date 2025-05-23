@@ -17,18 +17,13 @@ const WaaPage = () => {
 
         {/* Texte principal */}
         <div className="my-8 md:my-0">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            Deploy<br />
-            your<span className="relative">
-              <span className="relative z-10 ml-2">App</span>
-              <span className="absolute -top-1 -left-2 w-[90px] h-[90px] bg-[#0099ff] rounded-full z-0"></span>
-            </span><br />
-            with us.
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
+            Télécharge waa , puis connecte-toi à la mini-app e-commerce et passe ta commande en quelques clics chez Royal Panini's.
           </h1>
           
           <div className="mt-8">
             <Button 
-              className="rounded-full bg-[#0099ff] hover:bg-[#0088ee] text-white font-medium px-8 py-6 h-12"
+              className="rounded-full bg-[#7B466A] hover:bg-[#5D3C64] text-white font-medium px-8 py-6 h-12"
             >
               Hire Us
             </Button>
@@ -39,22 +34,22 @@ const WaaPage = () => {
         <div className="space-y-3 mt-10">
           <Button 
             variant="outline"
-            className="w-full md:w-64 bg-[#0099ff] text-white border-none flex items-center gap-2 h-12 rounded-full px-6"
+            className="w-full md:w-64 bg-[#7B466A] text-white border-none flex items-center gap-2 h-12 rounded-full px-6"
             onClick={() => window.open("https://play.google.com/store", "_blank")}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 3L19 12L5 21V3Z" fill="white"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+              <path fill="white" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
             </svg>
             <span className="font-medium">Google Play</span>
           </Button>
 
           <Button 
             variant="outline"
-            className="w-full md:w-64 bg-[#00459e] text-white border-none flex items-center gap-2 h-12 rounded-full px-6"
+            className="w-full md:w-64 bg-[#5D3C64] text-white border-none flex items-center gap-2 h-12 rounded-full px-6"
             onClick={() => window.open("https://www.apple.com/app-store", "_blank")}
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2C16.41 2 20 5.59 20 10C20 14.41 16.41 18 12 18C7.59 18 4 14.41 4 10C4 5.59 7.59 2 12 2ZM12 0C6.48 0 2 4.48 2 10C2 15.52 6.48 20 12 20C17.52 20 22 15.52 22 10C22 4.48 17.52 0 12 0ZM12 14C14.21 14 16 12.21 16 10C16 7.79 14.21 6 12 6C9.79 6 8 7.79 8 10C8 12.21 9.79 14 12 14Z" fill="white"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 384 512">
+              <path fill="white" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
             </svg>
             <span className="font-medium">Apple Store</span>
           </Button>
@@ -62,7 +57,7 @@ const WaaPage = () => {
       </div>
 
       {/* Partie droite - Image du téléphone */}
-      <div className="hidden md:flex w-1/2 bg-[#0099ff] relative overflow-hidden items-center justify-center">
+      <div className="hidden md:flex w-1/2 bg-gradient-to-br from-[#7B466A] to-[#5D3C64] relative overflow-hidden items-center justify-center">
         <div className="relative">
           <img 
             src="https://i.postimg.cc/tJkxp88n/iphone-mockup.png" 
@@ -74,7 +69,7 @@ const WaaPage = () => {
       </div>
 
       {/* Version mobile de l'image de téléphone */}
-      <div className="md:hidden w-full bg-[#0099ff] h-64 flex items-center justify-center mt-6">
+      <div className="md:hidden w-full bg-gradient-to-br from-[#7B466A] to-[#5D3C64] h-64 flex items-center justify-center mt-6">
         <img 
           src="https://i.postimg.cc/tJkxp88n/iphone-mockup.png" 
           alt="iPhone avec applications" 

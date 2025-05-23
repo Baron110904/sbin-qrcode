@@ -9,9 +9,11 @@ const WaaPage = () => {
       <div className="w-full md:w-1/2 p-6 md:p-12 flex flex-col justify-between">
         {/* Logo en haut */}
         <div className="mb-10 md:mb-0">
-          <div className="font-bold text-xl">
-            <span className="text-black">waa</span>
-          </div>
+          <img 
+            src="https://i.postimg.cc/QN5wkj2k/unnamed.webp" 
+            alt="waa logo" 
+            className="h-12 object-contain"
+          />
         </div>
 
         {/* Texte principal */}
@@ -51,9 +53,9 @@ const WaaPage = () => {
       <div className="hidden md:flex w-1/2 bg-gradient-to-br from-[#7B466A] to-[#5D3C64] relative overflow-hidden items-center justify-center">
         <div className="relative">
           <img 
-            src="https://i.postimg.cc/tJkxp88n/iphone-mockup.png" 
+            src="https://i.postimg.cc/Bv6RxH3X/Chat-GPT-Image-May-23-2025-01-51-53-AM.png" 
             alt="iPhone avec applications" 
-            className="object-contain max-w-md transform translate-x-1/4 scale-125"
+            className="object-contain max-w-md"
             style={{ filter: "drop-shadow(0 0 15px rgba(0,0,0,0.2))" }}
           />
         </div>
@@ -62,7 +64,7 @@ const WaaPage = () => {
       {/* Version mobile de l'image de téléphone */}
       <div className="md:hidden w-full bg-gradient-to-br from-[#7B466A] to-[#5D3C64] h-64 flex items-center justify-center mt-6">
         <img 
-          src="https://i.postimg.cc/tJkxp88n/iphone-mockup.png" 
+          src="https://i.postimg.cc/Bv6RxH3X/Chat-GPT-Image-May-23-2025-01-51-53-AM.png" 
           alt="iPhone avec applications" 
           className="object-contain h-full"
         />

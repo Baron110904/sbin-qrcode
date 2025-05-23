@@ -6,12 +6,13 @@ const WaaPage = () => {
   return (
     <div className="min-h-screen w-full flex flex-col md:flex-row relative overflow-hidden">
       {/* Background image for mobile only */}
-      <div className="md:hidden absolute inset-0 -z-10">
+      <div className="md:hidden relative w-full h-64 mt-6 overflow-hidden">
         <img
           src="https://i.postimg.cc/Bv6RxH3X/Chat-GPT-Image-May-23-2025-01-51-53-AM.png"
           alt="Mobile background"
-          className="w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
         />
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
       </div>
 
       {/* Contenu gauche (colonne entière sur mobile) */}

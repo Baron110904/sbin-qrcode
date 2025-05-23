@@ -10,24 +10,15 @@ const WaaPage = () => {
         {/* Logo en haut */}
         <div className="mb-10 md:mb-0">
           <div className="font-bold text-xl">
-            <span className="text-black">teknesis</span>
+            <span className="text-black">waa</span>
           </div>
-          <div className="text-sm">branding agency</div>
         </div>
 
         {/* Texte principal */}
         <div className="my-8 md:my-0">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
-            Télécharge waa , puis connecte-toi à la mini-app e-commerce et passe ta commande en quelques clics chez Royal Panini's.
+          <h1 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
+            Télécharge waa, puis connecte-toi à la mini-app e-commerce et passe ta commande en quelques clics chez Royal Panini's.
           </h1>
-          
-          <div className="mt-8">
-            <Button 
-              className="rounded-full bg-[#7B466A] hover:bg-[#5D3C64] text-white font-medium px-8 py-6 h-12"
-            >
-              Hire Us
-            </Button>
-          </div>
         </div>
 
         {/* Boutons de téléchargement en bas */}

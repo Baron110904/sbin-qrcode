@@ -5,7 +5,10 @@ const WaaPage = () => {
   return (
     <div className="min-h-screen w-full bg-white flex flex-col md:flex-row">
       {/* Partie gauche - Contenu textuel et CTA */}
-      <div className="w-full md:w-1/2 p-6 md:p-12 flex flex-col justify-between relative z-10">
+      <div className="w-full md:w-1/2 p-6 md:p-12 flex flex-col justify-between relative z-10 md:text-black text-white">
+        {/* Flou léger uniquement sur mobile */}
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px] md:hidden z-[-1]" />
+
         {/* Logo en haut */}
         <div className="mb-10 md:mb-0">
           <img 
@@ -16,14 +19,14 @@ const WaaPage = () => {
         </div>
 
         {/* Texte principal */}
-        <div className="my-8 md:my-0 text-black md:text-black text-white md:relative">
+        <div className="my-8 md:my-0 text-center md:text-left">
           <h1 className="text-3xl md:text-4xl font-normal tracking-normal leading-normal">
             Télécharge waa, puis connecte-toi à la mini-app e-commerce et passe ta commande en quelques clics chez Royal Panini's.
           </h1>
         </div>
 
-        {/* Boutons de téléchargement en bas */}
-        <div className="flex gap-4 mt-6 flex-wrap">
+        {/* Boutons de téléchargement */}
+        <div className="flex gap-4 mt-6 flex-wrap justify-center md:justify-start">
           <Button 
             variant="outline"
             className="flex-1 md:flex-none md:w-64 bg-[#000000] text-white border-none flex items-center gap-2 h-12 rounded-full px-6"
@@ -48,7 +51,7 @@ const WaaPage = () => {
         </div>
       </div>
 
-      {/* Partie droite - Image du téléphone pour desktop */}
+      {/* Partie droite - Image du téléphone */}
       <div className="hidden md:flex w-1/2 bg-gradient-to-br from-[#7E0B48] to-[#5D3C64] relative overflow-hidden items-center justify-center">
         <img 
           src="https://i.postimg.cc/Bv6RxH3X/Chat-GPT-Image-May-23-2025-01-51-53-AM.png" 
@@ -57,36 +60,13 @@ const WaaPage = () => {
         />
       </div>
 
-      {/* Version mobile de l'image de téléphone avec flou léger */}
-      <div className="md:hidden relative w-full h-96 overflow-hidden">
+      {/* Version mobile - Image de fond uniquement */}
+      <div className="md:hidden absolute inset-0 -z-10">
         <img 
           src="https://i.postimg.cc/Bv6RxH3X/Chat-GPT-Image-May-23-2025-01-51-53-AM.png" 
-          alt="iPhone avec applications" 
-          className="absolute inset-0 w-full h-full object-cover"
+          alt="iPhone en fond" 
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
-
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4 text-center">
-          <h1 className="text-xl font-medium mb-4">
-            Télécharge waa, puis connecte-toi à la mini-app e-commerce et passe ta commande chez Royal Panini's.
-          </h1>
-          <div className="flex gap-3 flex-wrap justify-center">
-            <Button 
-              variant="outline"
-              className="bg-[#000000] text-white border-none flex items-center gap-2 h-12 rounded-full px-6"
-              onClick={() => window.open("https://play.google.com/store/apps/details?id=bj.sbin.mobilemoney.customer&hl=en", "_blank")}
-            >
-              <span className="font-medium">Google Play</span>
-            </Button>
-            <Button 
-              variant="outline"
-              className="bg-[#000000] text-white border-none flex items-center gap-2 h-12 rounded-full px-6"
-              onClick={() => window.open("https://apps.apple.com/bj/app/myceltiis-cash/id6443397512", "_blank")}
-            >
-              <span className="font-medium">Apple Store</span>
-            </Button>
-          </div>
-        </div>
       </div>
     </div>
   );

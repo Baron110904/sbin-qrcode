@@ -4,14 +4,20 @@ import { Card } from "@/components/ui/card";
 
 const WaaPage = () => {
   return (
-    <div className="min-h-screen w-full flex flex-col md:flex-row">
-      
-      {/* Partie gauche : texte + boutons */}
-      <div
-        className="w-full md:w-1/2 p-6 md:p-12 flex flex-col justify-center gap-6 bg-white bg-opacity-90 md:bg-opacity-100 relative z-10"
-      >
-        {/* Logo */}
-        <div>
+    <div className="min-h-screen w-full flex flex-col md:flex-row relative overflow-hidden">
+      {/* Background image for mobile only */}
+      <div className="md:hidden absolute inset-0 -z-10">
+        <img
+          src="https://i.postimg.cc/Bv6RxH3X/Chat-GPT-Image-May-23-2025-01-51-53-AM.png"
+          alt="Mobile background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Contenu gauche (mobile: colonne entière) */}
+      <div className="w-full md:w-1/2 flex flex-col justify-between p-6 md:p-12 z-10 min-h-screen bg-white/90 md:bg-white">
+        {/* Logo en haut */}
+        <div className="mb-4">
           <img 
             src="https://i.postimg.cc/QN5wkj2k/unnamed.webp" 
             alt="waa logo" 
@@ -19,13 +25,15 @@ const WaaPage = () => {
           />
         </div>
 
-        {/* Texte principal */}
-        <h1 className="text-xl md:text-4xl font-normal leading-snug text-black">
-          Télécharge waa, puis connecte-toi à la mini-app e-commerce et passe ta commande en quelques clics chez Royal Panini's.
-        </h1>
+        {/* Texte au milieu */}
+        <div className="flex-1 flex items-center">
+          <h1 className="text-xl md:text-4xl font-normal leading-snug text-black">
+            Télécharge waa, puis connecte-toi à la mini-app e-commerce et passe ta commande en quelques clics chez Royal Panini's.
+          </h1>
+        </div>
 
-        {/* Boutons de téléchargement */}
-        <div className="flex gap-4 flex-wrap">
+        {/* Boutons en bas */}
+        <div className="flex gap-4 mt-6 flex-wrap">
           <Button
             variant="outline"
             className="flex-1 md:flex-none md:w-64 bg-black text-white border-none flex items-center gap-2 h-12 rounded-full px-6"
@@ -55,7 +63,7 @@ const WaaPage = () => {
               )
             }
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 384 512">
+            <svg xmlns="https://i.postimg.cc/NjPZwpT4/apple-store.png" width="18" height="18" viewBox="0 0 384 512">
               <path
                 fill="white"
                 d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
@@ -66,20 +74,11 @@ const WaaPage = () => {
         </div>
       </div>
 
-      {/* Partie droite desktop uniquement */}
-      <div className="hidden md:flex w-1/2 relative">
+      {/* Partie image à droite sur desktop */}
+      <div className="hidden md:flex w-1/2">
         <img
           src="https://i.postimg.cc/Bv6RxH3X/Chat-GPT-Image-May-23-2025-01-51-53-AM.png"
           alt="iPhone"
-          className="w-full h-full object-cover"
-        />
-      </div>
-
-      {/* Background mobile visible uniquement sur mobile */}
-      <div className="md:hidden absolute inset-0 -z-10">
-        <img
-          src="https://i.postimg.cc/Bv6RxH3X/Chat-GPT-Image-May-23-2025-01-51-53-AM.png"
-          alt="Mobile background"
           className="w-full h-full object-cover"
         />
       </div>

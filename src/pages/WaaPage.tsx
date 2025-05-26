@@ -95,7 +95,7 @@ const WaaPage = () => {
           <h1 className="text-sm font-light flex-1">Il est temps de passer à waa</h1>
         </div>
 
-        {/* Section 2: Image + Boutons (64%) - Section centrale plus compacte */}
+        {/* Section 2: Image + Boutons (54%) - Section centrale plus compacte */}
         <div className="flex-none h-[64vh] flex relative z-10 px-4">
           {/* Image du téléphone à gauche */}
           <div className="w-1/2 flex items-center justify-center">

@@ -85,8 +85,8 @@ const WaaPage = () => {
 
       {/* Version Mobile - Plein écran */}
       <div className="flex md:hidden flex-col min-h-screen">
-        {/* Section 1: Logo + Texte (20%) */}
-        <div className="flex-none h-[20vh] flex items-center justify-start space-x-4 relative z-10 px-4">
+        {/* Section 1: Logo + Texte (14%) - Réduit de 30% */}
+        <div className="flex-none h-[14vh] flex items-center justify-start space-x-6 relative z-10 px-4">
           <img 
             src="https://i.postimg.cc/QN5wkj2k/unnamed.webp" 
             alt="waa logo" 
@@ -95,8 +95,8 @@ const WaaPage = () => {
           <h1 className="text-sm font-light flex-1">Il est temps de passer à waa</h1>
         </div>
 
-        {/* Section 2: Image + Boutons (60%) */}
-        <div className="flex-none h-[60vh] flex relative z-10 px-4">
+        {/* Section 2: Image + Boutons (72%) - Augmenté pour compenser */}
+        <div className="flex-none h-[72vh] flex relative z-10 px-4">
           {/* Image du téléphone à gauche */}
           <div className="w-1/2 flex items-center justify-center">
             <img 
@@ -107,7 +107,7 @@ const WaaPage = () => {
           </div>
 
           {/* Boutons empilés à droite */}
-          <div className="w-1/2 flex flex-col justify-center items-center space-y-4">
+          <div className="w-1/2 flex flex-col justify-center items-center space-y-6">
             <Button 
               variant="outline"
               className="w-36 bg-black text-white border-none flex items-center justify-center gap-2 h-10 rounded-full hover:bg-gray-800 transition-colors text-xs"
@@ -132,8 +132,8 @@ const WaaPage = () => {
           </div>
         </div>
 
-        {/* Section 3: Texte en bas (20%) */}
-        <div className="flex-none h-[20vh] flex items-center justify-center text-center text-xs leading-relaxed px-4 relative z-10">
+        {/* Section 3: Texte en bas (14%) - Réduit de 30% */}
+        <div className="flex-none h-[14vh] flex items-center justify-center text-center text-xs leading-relaxed px-4 relative z-10">
           <p className="max-w-full">
             Waa est la nouvelle super app de Celtiis qui remplace l'application MyCeltiis Cash. Elle regroupe tous les services de cette dernière avec plein d'autres innovations à l'instar de l'E-Commerce ; Le Ticketing - Scolarité - MyCeltiis - Près de moi, etc.
           </p>

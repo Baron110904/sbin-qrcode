@@ -86,7 +86,7 @@ const WaaPage = () => {
       {/* Version Mobile - Plein écran avec espaces réduits */}
       <div className="flex md:hidden flex-col min-h-screen">
         {/* Section 1: Logo + Texte (18%) */}
-        <div className="flex-none h-[18vh] flex items-center justify-start space-x-6 relative z-10 px-4">
+        <div className="flex-none h-[18vh] flex items-center justify-start space-x-8 relative z-10 px-4">
           <img 
             src="https://i.postimg.cc/QN5wkj2k/unnamed.webp" 
             alt="waa logo" 
@@ -107,7 +107,7 @@ const WaaPage = () => {
           </div>
 
           {/* Boutons empilés à droite */}
-          <div className="w-1/2 flex flex-col justify-center items-center space-y-6">
+          <div className="w-1/2 flex flex-col justify-center items-center space-y-8">
             <Button 
               variant="outline"
               className="w-36 bg-black text-white border-none flex items-center justify-center gap-2 h-10 rounded-full hover:bg-gray-800 transition-colors text-xs"

@@ -10,7 +10,7 @@ const WaaPage = () => {
         background: 'linear-gradient(135deg, #7B466A 0%, #5a2f51 50%, #7B466A 100%)',
       }}
     >
-      {/* Motifs décoratifs */}
+      {/* Motifs décoratifs améliorés */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-20 h-20 border-2 border-white rounded-full"></div>
         <div className="absolute top-32 right-16 w-16 h-16 border border-white rounded-lg rotate-45"></div>
@@ -19,6 +19,11 @@ const WaaPage = () => {
         <div className="absolute top-1/2 left-1/4 w-8 h-8 bg-white rounded-full opacity-20"></div>
         <div className="absolute top-1/3 right-1/3 w-6 h-6 bg-white rounded-full opacity-15"></div>
         <div className="absolute bottom-1/3 left-1/2 w-10 h-10 border border-white rounded-full"></div>
+        {/* Motifs géométriques supplémentaires */}
+        <div className="absolute top-20 left-1/3 w-4 h-16 border-l-2 border-white opacity-20 rotate-12"></div>
+        <div className="absolute bottom-32 right-1/4 w-14 h-14 border border-white rounded-full opacity-15"></div>
+        <div className="absolute top-1/4 right-20 w-6 h-6 bg-white transform rotate-45 opacity-10"></div>
+        <div className="absolute bottom-1/4 left-16 w-3 h-20 border-r border-white opacity-25 rotate-45"></div>
       </div>
 
       {/* Version Desktop */}
@@ -78,29 +83,31 @@ const WaaPage = () => {
         </div>
       </div>
 
-      {/* Version Mobile */}
-      <div className="flex md:hidden flex-col h-full">
-        {/* Section 1: Logo vert W + Texte (20%) */}
-        <div className="h-[20%] flex items-center justify-start space-x-4 relative z-10 px-2">
-          <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-xl">W</span>
-          </div>
+      {/* Version Mobile - Plein écran */}
+      <div className="flex md:hidden flex-col min-h-screen">
+        {/* Section 1: Logo + Texte (20%) */}
+        <div className="flex-none h-[20vh] flex items-center justify-start space-x-4 relative z-10 px-4">
+          <img 
+            src="https://i.postimg.cc/QN5wkj2k/unnamed.webp" 
+            alt="waa logo" 
+            className="h-12 w-12 object-contain"
+          />
           <h1 className="text-sm font-light flex-1">Il est temps de passer à waa</h1>
         </div>
 
         {/* Section 2: Image + Boutons (60%) */}
-        <div className="h-[60%] flex relative z-10">
+        <div className="flex-none h-[60vh] flex relative z-10 px-4">
           {/* Image du téléphone à gauche */}
           <div className="w-1/2 flex items-center justify-center">
             <img 
               src="https://i.postimg.cc/9QDHmGGh/Waa.png" 
               alt="Interface waa" 
-              className="object-contain h-40 max-w-full"
+              className="object-contain h-full max-h-64 max-w-full"
             />
           </div>
 
           {/* Boutons empilés à droite */}
-          <div className="w-1/2 flex flex-col justify-center items-center space-y-3">
+          <div className="w-1/2 flex flex-col justify-center items-center space-y-4">
             <Button 
               variant="outline"
               className="w-36 bg-black text-white border-none flex items-center justify-center gap-2 h-10 rounded-full hover:bg-gray-800 transition-colors text-xs"
@@ -126,7 +133,7 @@ const WaaPage = () => {
         </div>
 
         {/* Section 3: Texte en bas (20%) */}
-        <div className="h-[20%] flex items-center justify-center text-center text-xs leading-relaxed px-4 relative z-10">
+        <div className="flex-none h-[20vh] flex items-center justify-center text-center text-xs leading-relaxed px-4 relative z-10">
           <p className="max-w-full">
             Waa est la nouvelle super app de Celtiis qui remplace l'application MyCeltiis Cash. Elle regroupe tous les services de cette dernière avec plein d'autres innovations à l'instar de l'E-Commerce ; Le Ticketing - Scolarité - MyCeltiis - Près de moi, etc.
           </p>

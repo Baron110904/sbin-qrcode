@@ -86,7 +86,7 @@ const WaaPage = () => {
       {/* Version Mobile - Plein écran avec espaces réduits */}
       <div className="flex md:hidden flex-col min-h-screen">
         {/* Section 1: Logo + Texte (18%) */}
-        <div className="flex-none h-[18vh] flex items-center justify-start space-x-4 relative z-10 px-4">
+        <div className="flex-none h-[18vh] flex items-center justify-start space-x-6 relative z-10 px-4">
           <img 
             src="https://i.postimg.cc/QN5wkj2k/unnamed.webp" 
             alt="waa logo" 

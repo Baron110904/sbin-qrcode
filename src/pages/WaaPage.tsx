@@ -1,36 +1,52 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 const WaaPage = () => {
   return (
-    <div className="min-h-screen w-full flex flex-col text-white p-6 space-y-6" style={{ background: 'linear-gradient(to bottom, #7B466A, #5a2f51)' }}>
-      
+    <div 
+      className="min-h-screen w-full flex flex-col text-white p-4 md:p-6 space-y-4 md:space-y-6 relative overflow-hidden" 
+      style={{ 
+        background: 'linear-gradient(135deg, #7B466A 0%, #5a2f51 50%, #7B466A 100%)',
+      }}
+    >
+      {/* Motifs décoratifs */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-10 left-10 w-20 h-20 border-2 border-white rounded-full"></div>
+        <div className="absolute top-32 right-16 w-16 h-16 border border-white rounded-lg rotate-45"></div>
+        <div className="absolute bottom-40 left-20 w-12 h-12 border-2 border-white rounded-full"></div>
+        <div className="absolute bottom-20 right-10 w-24 h-24 border border-white rounded-lg rotate-12"></div>
+        <div className="absolute top-1/2 left-1/4 w-8 h-8 bg-white rounded-full opacity-20"></div>
+        <div className="absolute top-1/3 right-1/3 w-6 h-6 bg-white rounded-full opacity-15"></div>
+        <div className="absolute bottom-1/3 left-1/2 w-10 h-10 border border-white rounded-full"></div>
+      </div>
+
       {/* Section 1: Logo + Texte en haut */}
-      <div className="flex justify-between items-center h-[20%]">
+      <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0 h-auto md:h-[20%] relative z-10">
         <img 
           src="https://i.postimg.cc/QN5wkj2k/unnamed.webp" 
           alt="waa logo" 
-          className="h-10 object-contain"
+          className="h-8 md:h-10 object-contain"
         />
-        <h1 className="text-sm font-light text-right">Il est temps de passer à waa</h1>
+        <h1 className="text-xs md:text-sm font-light text-center md:text-right px-2">Il est temps de passer à waa</h1>
       </div>
 
       {/* Section 2: Image + Boutons */}
-      <div className="flex flex-1 h-[60%]">
-        {/* Image téléphone */}
-        <div className="w-1/2 flex items-center justify-center">
+      <div className="flex flex-col md:flex-row flex-1 space-y-6 md:space-y-0 md:h-[60%] relative z-10">
+        {/* Image interface */}
+        <div className="w-full md:w-1/2 flex items-center justify-center order-1 md:order-1">
           <img 
-            src="https://i.postimg.cc/Bv6RxH3X/Chat-GPT-Image-May-23-2025-01-51-53-AM.png" 
-            alt="Téléphone" 
-            className="object-contain h-64"
+            src="https://i.postimg.cc/4Nf0dJbQ/interface-2.png" 
+            alt="Interface waa" 
+            className="object-contain h-48 md:h-64 max-w-full"
           />
         </div>
 
         {/* Boutons en colonne */}
-        <div className="w-1/2 flex flex-col justify-center items-center space-y-4">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center space-y-4 order-2 md:order-2">
           <Button 
             variant="outline"
-            className="w-44 bg-black text-white border-none flex items-center justify-center gap-2 h-12 rounded-full"
+            className="w-44 bg-black text-white border-none flex items-center justify-center gap-2 h-12 rounded-full hover:bg-gray-800 transition-colors"
             onClick={() => window.open("https://play.google.com/store/apps/details?id=bj.sbin.mobilemoney.customer&hl=en", "_blank")}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512">
@@ -41,7 +57,7 @@ const WaaPage = () => {
 
           <Button 
             variant="outline"
-            className="w-44 bg-black text-white border-none flex items-center justify-center gap-2 h-12 rounded-full"
+            className="w-44 bg-black text-white border-none flex items-center justify-center gap-2 h-12 rounded-full hover:bg-gray-800 transition-colors"
             onClick={() => window.open("https://apps.apple.com/bj/app/myceltiis-cash/id6443397512", "_blank")}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 384 512">
@@ -53,8 +69,10 @@ const WaaPage = () => {
       </div>
 
       {/* Section 3: Texte en bas */}
-      <div className="h-[20%] flex items-center justify-center text-center text-sm leading-relaxed">
-        Waa est la nouvelle super app de Celtiis qui remplace l'application MyCeltiis Cash. Elle regroupe tous les services de cette dernière avec plein d'autres innovations à l'instar de l'E-Commerce ; Le Ticketing - Scolarité - MyCeltiis - Près de moi, etc.
+      <div className="h-auto md:h-[20%] flex items-center justify-center text-center text-xs md:text-sm leading-relaxed px-4 relative z-10">
+        <p className="max-w-4xl">
+          Télécharge waa, puis connecte-toi à la mini-app e-commerce et passe ta commande en quelques clics chez Royal Panini's.
+        </p>
       </div>
     </div>
   );

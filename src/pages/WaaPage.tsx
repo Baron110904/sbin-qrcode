@@ -96,7 +96,7 @@ const WaaPage = () => {
         </div>
 
         {/* Section 2: Image + Boutons (54%) - Section centrale plus compacte */}
-        <div className="flex-none h-[64vh] flex relative z-10 px-4">
+        <div className="flex-none h-[54vh] flex relative z-10 px-4">
           {/* Image du téléphone à gauche */}
           <div className="w-1/2 flex items-center justify-center">
             <img 

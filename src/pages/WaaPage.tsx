@@ -7,7 +7,7 @@ const WaaPage = () => {
     <div 
       className="min-h-screen w-full flex flex-col text-white p-4 md:p-6 space-y-4 md:space-y-6 relative overflow-hidden" 
       style={{ 
-        background: 'linear-gradient(135deg, #7B466A 0%, #5a2f51 50%, #7B466A 100%)',
+        background: 'linear-gradient(135deg, #292f63 0%, #5a2f51 50%, #7B466A 100%)',
       }}
     >
       {/* Motifs décoratifs améliorés */}

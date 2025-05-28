@@ -91,7 +91,7 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out'
 			},
 			fontFamily: {
-        		'waa': ["Playpen Sans Deva", 'sans-serif'], 
+        		'waa': ['"Playpen Sans Deva"', 'sans-serif'], 
       		}
 		}
 	},

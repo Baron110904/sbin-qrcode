@@ -35,7 +35,7 @@ const WaaPage = () => {
             alt="waa logo" 
             className="h-10 object-contain"
           />
-          <h1 className="text-sm font-light text-right px-2">Il est temps de passer à waa</h1>
+          <h1 className="text-sm font-light text-right px-2 font-waa">Il est temps de passer à waa</h1>
         </div>
 
         {/* Section 2: Image + Boutons */}

@@ -77,8 +77,8 @@ const WaaPage = () => {
 
         {/* Section 3: Texte en bas */}
         <div className="h-[20%] flex items-center justify-center text-center text-sm leading-relaxed px-4 relative z-10">
-          <p className="max-w-4xl">
-            Télécharge waa, puis connecte-toi à la mini-app e-commerce et passe ta commande en quelques clics chez Royal Panini's.
+          <p className="max-w-4xl font-waa">
+            Waa est la nouvelle super app de Celtiis qui remplace l'application MyCeltiis Cash. Elle regroupe tous les services de cette dernière avec plein d'autres innovations à l'instar de l'E-Commerce ; Le Ticketing - Scolarité - MyCeltiis - Près de moi, etc.
           </p>
         </div>
       </div>
@@ -92,7 +92,7 @@ const WaaPage = () => {
             alt="waa logo" 
             className="h-12 w-12 object-contain"
           />
-          <h1 className="text-sm font-light flex-1 font-waa">Il est temps de passer à {" "}{" "}<span className="text-black px-2 py-1 rounded-md font-semibold shadow-sm" style={{ background: "#A9C01C"}}>Waa</span></h1>
+          <h1 className="text-sm font-light flex-1 font-waa">Il est temps de passer à waa</h1>
         </div>
 
         {/* Section 2: Image + Boutons (45%) - Section centrale plus compacte */}
@@ -134,7 +134,7 @@ const WaaPage = () => {
 
         {/* Section 3: Texte en bas (18%) */}
         <div className="flex-none h-[15vh] flex items-center justify-center text-center text-xs leading-relaxed px-4 relative z-10">
-          <p className="max-w-full">
+          <p className="max-w-full font-waa">
             Waa est la nouvelle super app de Celtiis qui remplace l'application MyCeltiis Cash. Elle regroupe tous les services de cette dernière avec plein d'autres innovations à l'instar de l'E-Commerce ; Le Ticketing - Scolarité - MyCeltiis - Près de moi, etc.
           </p>
         </div>

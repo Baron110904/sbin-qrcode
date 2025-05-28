@@ -35,7 +35,7 @@ const WaaPage = () => {
             alt="waa logo" 
             className="h-10 object-contain"
           />
-          <h1 className="text-sm font-light flex-1 font-waa">Il est temps de passer à {"  "}<span className="text-black px-2 py-1 rounded-md font-semibold shadow-sm" style={{ background: "#A9C01C"}}>Waa</span></h1>
+          <h1 className="text-sm font-light flex-1 font-waa">Il est temps de passer à Waa</h1>
         </div>
 
         {/* Section 2: Image + Boutons */}

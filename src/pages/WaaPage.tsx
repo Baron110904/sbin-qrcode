@@ -45,7 +45,7 @@ const WaaPage = () => {
             <img 
               src="https://i.postimg.cc/9QDHmGGh/Waa.png" 
               alt="Interface waa" 
-              className="object-contain h-64 max-w-full"
+              className="object-contain h-64 max-w-full z-10"
             />
             <div className="w-40 h-3 bg-black/60 blur-md rounded-full mt-2 z-0" />
           </div>
@@ -107,7 +107,7 @@ const WaaPage = () => {
             <img 
               src="https://i.postimg.cc/9QDHmGGh/Waa.png" 
               alt="Interface waa" 
-              className="object-contain h-full max-h-64 max-w-full"
+              className="object-contain h-full max-h-64 max-w-full z-10"
             />
             <div className="w-40 h-3 bg-black/60 blur-md rounded-full mt-2 z-0" />
           </div>

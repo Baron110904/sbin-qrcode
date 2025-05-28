@@ -45,8 +45,9 @@ const WaaPage = () => {
             <img 
               src="https://i.postimg.cc/9QDHmGGh/Waa.png" 
               alt="Interface waa" 
-              className="object-contain h-64 max-w-full shadow-2xl"
+              className="object-contain h-64 max-w-full"
             />
+            <div className="w-40 h-3 bg-black/30 blur-md rounded-full mt-2 z-0" />
           </div>
 
           {/* Boutons en colonne */}
@@ -106,8 +107,9 @@ const WaaPage = () => {
             <img 
               src="https://i.postimg.cc/9QDHmGGh/Waa.png" 
               alt="Interface waa" 
-              className="object-contain h-full max-h-64 max-w-full shadow-2xl"
+              className="object-contain h-full max-h-64 max-w-full"
             />
+            <div className="w-40 h-3 bg-black/30 blur-md rounded-full mt-2 z-0" />
           </div>
 
           {/* Boutons empilés à droite */}

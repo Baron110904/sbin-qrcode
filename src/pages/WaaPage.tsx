@@ -144,3 +144,5 @@ const WaaPage = () => {
 };
 
 export default WaaPage;
+
+>>>>>>> e4a479d42ceb7461b49117d018d947fb68e81ff7

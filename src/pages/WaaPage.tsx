@@ -35,7 +35,7 @@ const WaaPage = () => {
             alt="waa logo" 
             className="h-10 object-contain"
           />
-          <h1 className="text-sm font-light flex-1 font-waa">Il est temps de passer à Waa</h1>
+          <h1 className="text-sm font-light flex-1 font-waa">Il est temps de passer à {"  "}<span className="text-black px-2 py-1 rounded-md font-semibold shadow-sm" style={{ background: "#A9C01C"}}>Waa.</span></h1>
         </div>
 
         {/* Section 2: Image + Boutons */}
@@ -97,19 +97,19 @@ const WaaPage = () => {
             alt="waa logo" 
             className="h-12 w-12 object-contain"
           />
-          <h1 className="text-sm font-light flex-1 font-waa">Il est temps de passer à {"  "}<span className="text-black px-2 py-1 rounded-md font-semibold shadow-sm" style={{ background: "#A9C01C"}}>Waa</span></h1>
+          <h1 className="text-sm font-light flex-1 font-waa">Il est temps de passer à {"  "}<span className="text-black px-2 py-1 rounded-md font-semibold shadow-sm" style={{ background: "#A9C01C"}}>Waa.</span></h1>
         </div>
 
         {/* Section 2: Image + Boutons (45%) - Section centrale plus compacte */}
         <div className="flex-none h-[45vh] flex relative z-10 px-4">
           {/* Image du téléphone à gauche */}
-          <div className="w-1/2 flex items-center justify-center">
+          <div className="w-full flex flex-col items-center justify-center relative">
             <img 
               src="https://i.postimg.cc/9QDHmGGh/Waa.png" 
               alt="Interface waa" 
-              className="object-contain h-full max-h-64 max-w-full z-10"
+              className="object-contain h-64 max-w-full z-10"
             />
-            <div className="w-40 h-3 bg-black/60 blur-md rounded-full mt-2 z-0" />
+            <div className="absolute bottom-0 w-32 h-4 bg-black/20 blur-md rounded-full" />
           </div>
 
           {/* Boutons empilés à droite */}

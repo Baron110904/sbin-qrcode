@@ -57,7 +57,7 @@ const WaaPage = () => {
               onClick={() => window.open("https://play.google.com/store/apps/details?id=bj.sbin.mobilemoney.customer&hl=en", "_blank")}
             >
               <img
-                src="https://i.postimg.cc/yxSST3tQ/hd-google-play-playstore-logo-symbol-png-701751694777134cuw3jc7voo.png"
+                src="https://i.postimg.cc/3NJ3KsCg/2131df98267eccb915b71951928a157e.jpg"
                 alt="Play Store"
                 className="w-4 h-4 object-contain"
               />
@@ -118,7 +118,7 @@ const WaaPage = () => {
               onClick={() => window.open("https://play.google.com/store/apps/details?id=bj.sbin.mobilemoney.customer&hl=en", "_blank")}
             >
               <img
-                src="https://i.postimg.cc/yxSST3tQ/hd-google-play-playstore-logo-symbol-png-701751694777134cuw3jc7voo.png"
+                src="https://i.postimg.cc/3NJ3KsCg/2131df98267eccb915b71951928a157e.jpg"
                 alt="Play Store"
                 className="w-4 h-4 object-contain"
               />

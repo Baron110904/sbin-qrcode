@@ -110,7 +110,7 @@ const WaaPage = () => {
           <div className="w-1/2 flex flex-col justify-center items-center space-y-8">
             <Button 
               variant="outline"
-              className="w-32 bg-black text-white border-none flex items-center justify-center gap-2 h-10 rounded-full hover:bg-gray-800 transition-colors text-xs"
+              className="ml-4 w-32 bg-black text-white border-none flex items-center justify-center gap-2 h-10 rounded-full hover:bg-gray-800 transition-colors text-xs"
               onClick={() => window.open("https://play.google.com/store/apps/details?id=bj.sbin.mobilemoney.customer&hl=en", "_blank")}
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 512 512">
@@ -121,7 +121,7 @@ const WaaPage = () => {
 
             <Button 
               variant="outline"
-              className="w-32 bg-black text-white border-none flex items-center justify-center gap-2 h-10 rounded-full hover:bg-gray-800 transition-colors text-xs"
+              className="ml-4 w-32 bg-black text-white border-none flex items-center justify-center gap-2 h-10 rounded-full hover:bg-gray-800 transition-colors text-xs"
               onClick={() => window.open("https://apps.apple.com/bj/app/myceltiis-cash/id6443397512", "_blank")}
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 384 512">

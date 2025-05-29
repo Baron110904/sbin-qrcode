@@ -35,7 +35,7 @@ const WaaPage = () => {
             alt="waa logo" 
             className="h-10 object-contain"
           />
-          <h1 className="text-sm font-light flex-1 font-waa">Il est temps de passer à {"  "}<span className="text-black px-2 py-1 rounded-md font-semibold shadow-sm" style={{ background: "#A9C01C"}}>Waa.</span></h1>
+          <h1 className="text-sm font-light flex-1 font-waa animate-pulse text-[#B2C248]">Il est temps de passer à {"  "}<span className="text-black px-2 py-1 rounded-md font-semibold shadow-sm" style={{ background: "#A9C01C"}}>Waa.</span></h1>
         </div>
 
         {/* Section 2: Image + Boutons */}
@@ -54,7 +54,7 @@ const WaaPage = () => {
           <div className="w-1/2 flex flex-col justify-center items-center space-y-4">
             <Button 
               variant="outline"
-              className="w-44 bg-black text-white border-none flex items-center justify-center gap-2 h-12 rounded-full hover:bg-gray-800 transition-colors"
+              className="hover:scale-105 transition-transform duration-200 w-44 bg-black text-white border-none flex items-center justify-center gap-2 h-12 rounded-full hover:bg-gray-800 transition-colors"
               onClick={() => window.open("https://play.google.com/store/apps/details?id=bj.sbin.mobilemoney.customer&hl=en", "_blank")}
             >
               <img

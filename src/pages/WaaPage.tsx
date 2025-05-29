@@ -67,7 +67,7 @@ const WaaPage = () => {
 
             <Button 
               variant="outline"
-              className="w-44 bg-black text-white border-none flex items-center justify-center gap-2 h-12 rounded-full hover:bg-gray-800 transition-colors"
+              className="hover:scale-105 transition-transform duration-200 w-44 bg-black text-white border-none flex items-center justify-center gap-2 h-12 rounded-full hover:bg-gray-800 transition-colors"
               onClick={() => window.open("https://apps.apple.com/bj/app/myceltiis-cash/id6443397512", "_blank")}
             >
               <img
@@ -97,7 +97,7 @@ const WaaPage = () => {
             alt="waa logo" 
             className="h-12 w-12 object-contain"
           />
-          <h1 className="text-sm font-light flex-1 font-waa animate-pulse text-[#B2C248]">Il est temps de passer à {"  "}<span className="text-black px-2 py-1 rounded-md font-semibold shadow-sm" style={{ background: "#A9C01C"}}>Waa.</span></h1>
+          <h1 className="text-sm font-light flex-1 font-waa animate-pulse text-[#B2C248]">Il est temps de passer à {"  "}<span className="text-black px-2 py-1 rounded-md font-semibold shadow-sm bg-[#B2C248] text-black px-3 py-1 rounded-xl shadow-[0_0_10px_#B2C248] font-semibold" style={{ background: "#A9C01C"}}>Waa.</span></h1>
         </div>
 
         {/* Section 2: Image + Boutons (45%) - Section centrale plus compacte */}

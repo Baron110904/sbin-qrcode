@@ -91,7 +91,7 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out'
 			},
 			fontFamily: {
-        		'waa': ['"Abel"', 'sans-serif'], 
+        		'waa': ['"Lato"', 'sans-serif'], 
       		}
 		}
 	},

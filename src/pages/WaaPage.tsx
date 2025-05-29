@@ -41,13 +41,13 @@ const WaaPage = () => {
         {/* Section 2: Image + Boutons */}
         <div className="flex flex-row flex-1 space-y-0 h-[60%] relative z-10">
           {/* Image interface */}
-          <div className="w-1/2 flex items-center justify-center">
+          <div className="w-full flex flex-col items-center justify-center relative">
             <img 
               src="https://i.postimg.cc/9QDHmGGh/Waa.png" 
               alt="Interface waa" 
               className="object-contain h-64 max-w-full z-10"
             />
-            <div className="w-40 h-3 bg-black/60 blur-md rounded-full mt-2 z-0" />
+            <div className="absolute bottom-0 w-20 sm:w-28 md:w-36 h-3 bg-black/20 blur-md rounded-full" />
           </div>
 
           {/* Boutons en colonne */}
@@ -109,7 +109,7 @@ const WaaPage = () => {
               alt="Interface waa" 
               className="object-contain h-64 max-w-full z-10"
             />
-            <div className="absolute bottom-0 w-32 h-4 bg-black/20 blur-md rounded-full" />
+            <div className="absolute bottom-0 w-20 sm:w-28 md:w-36 h-3 bg-black/20 blur-md rounded-full" />
           </div>
 
           {/* Boutons empilés à droite */}

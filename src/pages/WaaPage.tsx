@@ -97,7 +97,7 @@ const WaaPage = () => {
             alt="waa logo" 
             className="h-12 w-12 object-contain"
           />
-          <h1 className="text-sm font-light flex-1 font-waa animate-pulse text-[#B2C248]">Il est temps de passer à {"  "}<span className="text-black px-2 py-1 rounded-md font-semibold shadow-sm bg-[#B2C248] text-black px-3 py-1 rounded-xl shadow-[0_0_10px_#B2C248] font-semibold" style={{ background: "#A9C01C"}}>Waa.</span></h1>
+          <h1 className="text-sm font-light flex-1 font-waa animate-pulse text-[#B2C248]">Il est temps de passer à {"  "}<span className="text-black px-2 py-1 rounded-md font-semibold shadow-sm bg-[#03045E] text-black px-3 py-1 rounded-xl shadow-[0_0_10px_#03045E] font-semibold" style={{ background: "#A9C01C"}}>Waa.</span></h1>
         </div>
 
         {/* Section 2: Image + Boutons (45%) - Section centrale plus compacte */}

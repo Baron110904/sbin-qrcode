@@ -103,7 +103,7 @@ const WaaPage = () => {
         {/* Section 2: Image + Boutons (45%) - Section centrale plus compacte */}
         <div className="flex-none h-[45vh] flex relative z-10 px-4">
           {/* Boutons empilés à droite */}
-          <div className="w-1/2 flex flex-col justify-center items-center space-y-8">
+          <div className="w-full md:w-[35%] flex flex-col justify-center items-center space-y-8">
             <Button 
               variant="outline"
               className="hover:scale-105 transition-transform duration-200 ml-4 w-32 bg-black text-white border-none flex items-center justify-center gap-2 h-10 rounded-full hover:bg-gray-800 transition-colors text-xs"
@@ -132,7 +132,7 @@ const WaaPage = () => {
           </div>
 
           {/* Image du téléphone à gauche */}
-          <div className="w-full flex flex-col items-center justify-center relative">
+          <div className="w-full md:w-[65%] flex flex-col items-center justify-center relative">
             <img 
               src="https://i.postimg.cc/9QDHmGGh/Waa.png" 
               alt="Interface waa" 

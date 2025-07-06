@@ -148,7 +148,7 @@ const WaaPage = () => {
             Waa est la nouvelle super app de Celtiis qui remplace l'application MyCeltiis Cash. Elle regroupe tous les services de cette dernière avec plein d'autres innovations à l'instar de l'E-Commerce ; Le Ticketing - Scolarité - MyCeltiis - Près de moi...
           </p>
         </div>
-        <div className="h-4 bg-white" />
+        <div className="h-10 bg-white" />
       </div>
     </div>
   );

@@ -101,7 +101,7 @@ const WaaPage = () => {
         </div>
 
         {/* Section 2: Image + Boutons (45%) - Section centrale plus compacte */}
-        <div className="flex-none h-[50vh] flex relative z-10 px-4">
+        <div className="flex-none h-[40vh] flex relative z-10 px-4">
           {/* Boutons empilés à droite */}
           <div className="w-full md:w-[35%] flex flex-col justify-center items-center space-y-8">
             <Button 

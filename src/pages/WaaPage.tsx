@@ -102,16 +102,6 @@ const WaaPage = () => {
 
         {/* Section 2: Image + Boutons (45%) - Section centrale plus compacte */}
         <div className="flex-none h-[45vh] flex relative z-10 px-4">
-          {/* Image du téléphone à gauche */}
-          <div className="w-full flex flex-col items-center justify-center relative">
-            <img 
-              src="https://i.postimg.cc/9QDHmGGh/Waa.png" 
-              alt="Interface waa" 
-              className="object-contain h-64 max-w-full z-10 animate-zoom-slow"
-            />
-            <div className="absolute bottom-4 w-32 h-4 bg-black/20 blur-md rounded-full" />
-          </div>
-
           {/* Boutons empilés à droite */}
           <div className="w-1/2 flex flex-col justify-center items-center space-y-8">
             <Button 
@@ -139,6 +129,16 @@ const WaaPage = () => {
               />
               Apple Store
             </Button>
+          </div>
+
+          {/* Image du téléphone à gauche */}
+          <div className="w-full flex flex-col items-center justify-center relative">
+            <img 
+              src="https://i.postimg.cc/9QDHmGGh/Waa.png" 
+              alt="Interface waa" 
+              className="object-contain h-64 max-w-full z-10 animate-zoom-slow"
+            />
+            <div className="absolute bottom-4 w-32 h-4 bg-black/20 blur-md rounded-full" />
           </div>
         </div>
 

@@ -143,7 +143,7 @@ const WaaPage = () => {
         </div>
 
         {/* Section 3: Texte en bas (18%) */}
-        <div className="flex-1 h-[15vh] flex-1 overflow-y-auto px-4 py-6 text-center text-xs leading-relaxed font-waa pb-[10vh]">
+        <div className="h-[15vh] flex-1 overflow-y-auto px-4 py-6 text-center text-xs leading-relaxed font-waa pb-[10vh]">
           <p className="max-w-full font-waa">
             Waa est la nouvelle super app de Celtiis qui remplace l'application MyCeltiis Cash. Elle regroupe tous les services de cette dernière avec plein d'autres innovations à l'instar de l'E-Commerce ; Le Ticketing - Scolarité - MyCeltiis - Près de moi...
           </p>

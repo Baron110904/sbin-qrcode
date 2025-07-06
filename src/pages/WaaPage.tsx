@@ -103,7 +103,7 @@ const WaaPage = () => {
         {/* Section 2: Image + Boutons (45%) - Section centrale plus compacte */}
         <div className="flex-1 h-[45vh] flex relative z-10 px-4">
           {/* Boutons empilés à droite */}
-          <div className="w-full md:w-[35%] flex flex-col justify-center items-center space-y-6">
+          <div className="w-full md:w-[35%] flex flex-col justify-center items-center space-y-4">
             <Button 
               variant="outline"
               className="hover:scale-105 transition-transform duration-200 ml-4 w-25 bg-black text-white border-none flex items-center justify-center gap-2 h-10 rounded-full hover:bg-gray-800 transition-colors text-xs"

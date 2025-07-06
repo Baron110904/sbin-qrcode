@@ -89,9 +89,9 @@ const WaaPage = () => {
       </div>
 
       {/* Version Mobile - Plein écran avec espaces réduits */}
-      <div className="flex md:hidden flex-col min-h-screen">
+      <div className="flex md:hidden flex-col min-h-screen bg-neutral-100">
         {/* Section 1: Logo + Texte (18%) */}
-        <div className="flex-none h-[15vh] flex items-center justify-start space-x-10 relative z-10 px-4">
+        <div className="flex-none h-[15vh] bg-white flex items-center justify-start space-x-4 px-4 shadow-md z-10">
           <img 
             src="https://i.postimg.cc/QN5wkj2k/unnamed.webp" 
             alt="waa logo" 
@@ -148,6 +148,7 @@ const WaaPage = () => {
             Waa est la nouvelle super app de Celtiis qui remplace l'application MyCeltiis Cash. Elle regroupe tous les services de cette dernière avec plein d'autres innovations à l'instar de l'E-Commerce ; Le Ticketing - Scolarité - MyCeltiis - Près de moi...
           </p>
         </div>
+        <div className="h-4 bg-white" />
       </div>
     </div>
   );
